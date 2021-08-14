@@ -1,0 +1,49 @@
+.header {
+  // background-color: $color-bg;
+  border-bottom: 2px solid #a283ec;
+  position: relative;
+  z-index: 1;
+  &__inner {
+    padding: 4rem 0;
+
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: space-between,
+      )
+    );
+  }
+  &__menu {
+    &-list {
+      @include flexboxUpdate(
+        (
+          justify-content: flex-start,
+          align-items: center,
+        )
+      );
+      &-item {
+        &:not(:first-child) {
+          margin-left: 6rem;
+        }
+        > i {
+          color: $white;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &__icon {
+    @include flexboxUpdate(());
+    &-search,
+    &-bar {
+      i {
+        color: $white;
+      }
+    }
+  }
+  @include maxWidth(767) {
+    &__menu {
+      display: none;
+    }
+  }
+}
