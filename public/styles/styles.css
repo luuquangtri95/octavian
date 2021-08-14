@@ -394,7 +394,8 @@ html {
 
 .header {
   border-bottom: 2px solid #a283ec;
-  position: relative;
+  position: fixed;
+  width: 100%;
   z-index: 1; }
   .header__inner {
     padding: 4rem 0;
@@ -492,7 +493,6 @@ a {
   color: #ffffff; }
 
 .banner {
-  margin-top: -122px;
   width: 100%;
   height: 1080px;
   background: url("../images/img-banner.png") no-repeat center/cover;
