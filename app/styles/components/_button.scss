@@ -2,7 +2,14 @@
   border: none;
   outline: none;
   font-weight: bold;
+  border-radius: 5px;
   &--blue {
     color: #4a44f2;
+  }
+  &--spacing {
+    padding: 2rem 7rem;
+  }
+  &--primary {
+    background-color: #4a44f2;
   }
 }

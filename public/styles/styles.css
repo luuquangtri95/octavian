@@ -492,6 +492,37 @@ a {
   text-decoration: none;
   color: #ffffff; }
 
+.block__heading-title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 4.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word; }
+
+.block__heading-desc {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #888e99;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 6.5rem; }
+
 .banner {
   width: 100%;
   height: 1080px;
@@ -593,9 +624,98 @@ a {
         max-width: 100%;
         margin-bottom: 2rem; } }
 
+.virus__inner {
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+  --spacing: 13rem;
+  --columns: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-left: calc(-1 * var(--spacing)); }
+
+.virus__column {
+  width: calc(calc(100% / var(--columns)) - var(--spacing));
+  margin-left: auto; }
+  .virus__column:first-child {
+    -webkit-transform: translateX(-10rem);
+    transform: translateX(-10rem); }
+  .virus__column-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .virus__column-info {
+    width: 37rem;
+    margin-left: auto; }
+
+.virus__item {
+  --border-radius: 1rem;
+  border-radius: var(--border-radius); }
+  .virus__item-content {
+    color: black;
+    border-radius: var(--border-radius);
+    width: 37rem;
+    height: 37rem;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .virus__item-content img {
+      margin-bottom: 5rem; }
+    .virus__item-content span {
+      font-size: 2rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: bold; }
+  .virus__item:first-child {
+    background-color: #4a44f2;
+    margin-right: 3rem;
+    color: #ffffff; }
+
 .btn {
   border: none;
   outline: none;
-  font-weight: bold; }
+  font-weight: bold;
+  border-radius: 5px; }
   .btn--blue {
     color: #4a44f2; }
+  .btn--spacing {
+    padding: 2rem 7rem; }
+  .btn--primary {
+    background-color: #4a44f2; }

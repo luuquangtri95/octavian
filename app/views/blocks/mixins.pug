@@ -1,0 +1,6 @@
+mixin blockHeading(data)
+  .block__heading
+    h3.block__heading-title= data.title 
+    p.block__heading-desc= data.desc
+    if(data.textBtn)
+      a(href="#").btn.btn--primary.btn--spacing= data.textBtn

@@ -1,0 +1,67 @@
+.virus {
+  &__inner {
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    --spacing: 13rem;
+    --columns: 2;
+    @include flexboxUpdate(
+      (
+        align-items: center,
+      )
+    );
+    margin-left: calc(-1 * var(--spacing));
+  }
+  &__column {
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    // margin-left: var(--spacing);
+    margin-left: auto;
+    &:first-child {
+      transform: translateX(-10rem);
+    }
+    &-list {
+      @include flexboxUpdate(
+        (
+          align-items: center,
+        )
+      );
+    }
+    &-info {
+      width: 37rem;
+      margin-left: auto;
+    }
+  }
+  &__item {
+    --border-radius: 1rem;
+    border-radius: var(--border-radius);
+    &-content {
+      color: black;
+      border-radius: var(--border-radius);
+      width: 37rem;
+      height: 37rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      @include flexboxUpdate(
+        (
+          flex-direction: column,
+          align-items: center,
+          justify-content: center,
+        )
+      );
+      img {
+        // max-width: unset;
+        margin-bottom: 5rem;
+      }
+      span {
+        font-size: 2rem;
+        font-family: $font-raleWay;
+        font-weight: bold;
+      }
+      &:first-child {
+      }
+    }
+    &:first-child {
+      background-color: #4a44f2;
+      margin-right: 3rem;
+      color: $white;
+    }
+  }
+}
