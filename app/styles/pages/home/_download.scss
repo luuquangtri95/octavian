@@ -1,0 +1,59 @@
+.download {
+  &__inner {
+    z-index: 1;
+    position: relative;
+    padding-top: 12.5rem;
+    background-color: #4a44f2;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+  &__box {
+    // margin-left: -8rem;
+    @include flexboxUpdate(
+      (
+        align-items: flex-start,
+        justify-content: space-between,
+      )
+    );
+  }
+  &__item {
+    // width: calc(50% - 8rem);
+    // margin-left: 8rem;
+    img {
+      max-width: unset;
+    }
+    &-title {
+      font-size: 6rem;
+      font-weight: bold;
+      line-height: 1.4;
+      font-family: $font-raleWay;
+      color: $white;
+      margin-top: 4rem;
+    }
+    &-desc {
+      color: $white;
+      font-size: 2.4rem;
+      line-height: 1.6;
+      @include textClamp(3);
+    }
+  }
+  &__btn {
+    &-icon {
+      padding-right: 1.5rem;
+    }
+    &-button {
+      padding: 2rem 8rem;
+      transition: all 0.2s linear;
+      color: $white;
+      border: 2px solid $white;
+      border-radius: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      &:hover {
+        background-color: #fff;
+        color: #4a44f2;
+      }
+    }
+  }
+}

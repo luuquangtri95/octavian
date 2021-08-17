@@ -1,0 +1,33 @@
+.protect {
+  &__inner {
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        justify-content: flex-start,
+      )
+    );
+  }
+  &__item {
+    &:last-child {
+      margin-left: 10rem;
+    }
+    img {
+      max-width: unset;
+      margin-left: -19rem;
+    }
+    &-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      font-family: $font-raleWay;
+      margin-bottom: 4.5rem;
+      line-height: 1.6;
+    }
+    &-desc {
+      @include textClamp(3);
+      line-height: 1.6;
+      font-size: 1.8rem;
+      color: $desc-color;
+      margin-bottom: 6.5rem;
+    }
+  }
+}

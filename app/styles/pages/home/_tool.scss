@@ -33,6 +33,7 @@
         p {
           font-size: 1.8rem;
           line-height: 1.8;
+          color: $desc-color;
           @include textClamp(2);
         }
       }

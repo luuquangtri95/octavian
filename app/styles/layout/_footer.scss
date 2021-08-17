@@ -1,0 +1,74 @@
+.footer {
+  margin-top: -45rem;
+  background-color: #282f3a;
+  &__inner {
+    padding-top: 45rem;
+    padding-bottom: 15rem;
+    --column: 3;
+    --spacing: 16.5rem;
+    @include flexboxUpdate(
+      (
+        align-items: stretch,
+        justify-content: space-between,
+      )
+    );
+    margin-left: calc(-1 * var(--spacing));
+  }
+  &__item {
+    width: calc(calc(100% / var(--column)) - var(--spacing));
+    margin-left: var(--spacing);
+    &-desc {
+      @include textClamp(3);
+      color: $desc-color;
+      line-height: 1.8;
+    }
+    &-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+  &__social {
+    &-icon {
+      color: $white;
+      font-size: 2rem;
+      display: inline-block;
+      &:not(:first-child) {
+        margin-left: 4.5rem;
+      }
+    }
+  }
+  &__list {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 3.5rem;
+      }
+    }
+    &-link {
+      white-space: pre;
+      display: block;
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $desc-color;
+      &--pre {
+        white-space: normal;
+      }
+    }
+  }
+  @include maxWidth(767) {
+    padding-bottom: 0;
+    margin-top: 0;
+    &__inner {
+      --column: 1;
+      --spacing: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+    &__social {
+      margin-bottom: 3rem;
+    }
+    &__list {
+      margin-bottom: 3rem;
+    }
+  }
+}
