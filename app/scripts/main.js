@@ -1,17 +1,22 @@
 // Slick slider
-// $(document).ready(function () {
-//   $(".quote-list").slick({
-//     prevArrow:
-//       "<button type='button' class='slick-prev pull-left'><i class='fal fa-angle-left' aria-hidden='true'></i></button>",
-//     nextArrow:
-//       "<button type='button' class='slick-next pull-right'><i class='fal fa-angle-right' aria-hidden='true'></i></button>",
-//     responsive: [
-//       {
-//         breakpoint: 767,
-//         settings: {
-//           arrows: false,
-//         },
-//       },
-//     ],
-//   });
-// });
+$(document).ready(function () {
+  $('.review__list').slick({
+    dots: false,
+    prevArrow: false,
+    nextArrow: false,
+    centerMode: true,
+    variableWidth: true,
+    slidesToShow: 3,
+    autoplay: true,
+    infinite: true,
+    speed: 2000,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+});

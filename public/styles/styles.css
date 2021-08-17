@@ -68,6 +68,17 @@ html {
 .hamburger.is-active .bar {
   opacity: 0; }
 
+.slick-initialized .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem;
+  width: 83.5rem !important;
+  opacity: 1; }
+
+.slick-slide:not(.slick-current) {
+  opacity: 0.3; }
+
 .align-item-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1218,6 +1229,52 @@ a {
 @media screen and (max-width: 767px) {
   .download {
     display: none; } }
+
+.review__heading {
+  width: 57rem;
+  margin: 0 auto; }
+
+.review__list {
+  margin: 0 auto; }
+
+.review__item {
+  padding: 7rem;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+  .review__item:hover {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .review__item-icon {
+    position: absolute;
+    top: -2rem; }
+  .review__item-title {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.4;
+    font-family: "Raleway", sans-serif; }
+    .review__item-title span {
+      font-weight: bold; }
+  .review__item-author {
+    font-size: 1.8rem;
+    color: #6a727f;
+    font-weight: bold; }
 
 .btn {
   border: none;

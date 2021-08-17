@@ -1,0 +1,46 @@
+.review {
+  &__inner {
+  }
+  &__heading {
+    width: 57rem;
+    margin: 0 auto;
+  }
+  &__list {
+    // width: 83.5rem;
+    margin: 0 auto;
+  }
+  &__item {
+    padding: 7rem;
+    position: relative;
+    transition: all 0.2s linear;
+    border-radius: 2rem;
+    @include flexboxUpdate(
+      (
+        align-items: center,
+        flex-direction: column,
+        justify-content: center,
+      )
+    );
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    &-icon {
+      position: absolute;
+      top: -2rem;
+    }
+    &-title {
+      font-size: 3rem;
+      text-align: center;
+      line-height: 1.4;
+      font-family: $font-raleWay;
+      span {
+        font-weight: bold;
+      }
+    }
+    &-author {
+      font-size: 1.8rem;
+      color: $desc-color;
+      font-weight: bold;
+    }
+  }
+}
