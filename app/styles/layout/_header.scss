@@ -60,6 +60,11 @@
       }
     }
   }
+  @include minWidth(768) {
+    .header-menu-toggle {
+      display: none;
+    }
+  }
   @include maxWidth(767) {
     &__menu {
       display: none;

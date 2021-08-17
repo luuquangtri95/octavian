@@ -2,7 +2,12 @@
   &__inner {
     width: 57rem;
   }
-  img{
+  img {
     margin-bottom: 20rem;
+  }
+  @include maxWidth(767) {
+    &__inner {
+      width: 100%;
+    }
   }
 }

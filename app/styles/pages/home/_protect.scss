@@ -30,4 +30,27 @@
       margin-bottom: 6.5rem;
     }
   }
+  @include maxWidth(767) {
+    &__inner {
+      flex-direction: column;
+    }
+    &__item {
+      img{
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 3rem;
+      }
+      &-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+      &-desc{
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
 }

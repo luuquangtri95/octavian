@@ -30,11 +30,14 @@
   }
   &__social {
     &-icon {
-      color: $white;
+      color: $desc-color;
       font-size: 2rem;
       display: inline-block;
       &:not(:first-child) {
         margin-left: 4.5rem;
+      }
+      &:hover {
+        color: $white;
       }
     }
   }
@@ -53,6 +56,9 @@
       &--pre {
         white-space: normal;
       }
+      &:hover {
+        color: $white;
+      }
     }
   }
   @include maxWidth(767) {
@@ -63,6 +69,11 @@
       --spacing: 0;
       padding: 0;
       flex-direction: column;
+    }
+    &__item {
+      &:first-child {
+        padding-top: 3rem;
+      }
     }
     &__social {
       margin-bottom: 3rem;

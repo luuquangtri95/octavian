@@ -30,4 +30,17 @@ a {
       margin-bottom: 6.5rem;
     }
   }
+  @include maxWidth(767) {
+    &__heading {
+      &-title {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+      &-desc {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }

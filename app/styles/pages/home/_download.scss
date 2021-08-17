@@ -56,4 +56,36 @@
       }
     }
   }
+  @include maxWidth(767) {
+    display: none;
+    // &__inner {
+    //   padding-top: 2rem;
+    //   max-width: 90%;
+    // }
+    // &__box {
+    //   flex-direction: column;
+    // }
+    // &__item {
+    //   img {
+    //     max-width: 100%;
+    //   }
+    //   &-title {
+    //     font-size: 2.5rem;
+    //     margin-bottom: 3rem;
+    //   }
+    //   &-desc {
+    //     font-size: 1.4rem;
+    //   }
+    // }
+    // &__btn {
+    //   @include flexboxUpdate(
+    //     (
+    //       flex-direction: column,
+    //     )
+    //   );
+    //   &-button {
+    //     padding: 0;
+    //   }
+    // }
+  }
 }
