@@ -61,6 +61,27 @@
       }
     }
   }
+  @include maxWidth(1023) {
+    padding-bottom: 0;
+    margin-top: 0;
+    &__inner {
+      --column: 1;
+      --spacing: 0;
+      padding: 0;
+      flex-direction: column;
+    }
+    &__item {
+      &:first-child {
+        padding-top: 3rem;
+      }
+    }
+    &__social {
+      margin-bottom: 3rem;
+    }
+    &__list {
+      margin-bottom: 3rem;
+    }
+  }
   @include maxWidth(767) {
     padding-bottom: 0;
     margin-top: 0;

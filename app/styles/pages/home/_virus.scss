@@ -64,13 +64,38 @@
       }
     }
   }
+  @include tablet {
+    &__inner {
+      --spacing: 0;
+      padding-top: 0;
+      flex-direction: column;
+    }
+    &__column {
+      margin-left: unset;
+      &:first-child {
+        transform: unset;
+        margin-bottom: 3rem;
+      }
+      &-info {
+        width: 100%;
+      }
+    }
+    &__item {
+      &-content {
+        width: 30rem;
+        height: 30rem;
+      }
+    }
+  }
   @include maxWidth(767) {
     &__inner {
+      padding: 5rem 0;
       --spacing: 0;
       --column: 1;
       flex-direction: column;
     }
     &__column {
+      margin-left: unset;
       &-list {
         flex-direction: column;
       }

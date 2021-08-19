@@ -60,8 +60,11 @@
       }
     }
   }
-  @include minWidth(768) {
+  @include tablet {
     .header-menu-toggle {
+      display: block;
+    }
+    &__menu {
       display: none;
     }
   }

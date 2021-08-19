@@ -60,6 +60,28 @@
       }
     }
   }
+  @include tablet{
+    margin-top: -30rem;
+    &__inner{
+      margin-top: 0;
+    }
+    &__item{
+      &-image{
+        max-width: 100%;
+      }
+      &-content{
+        width: 100%;
+      }
+      &-title{
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+      }
+      &-desc{
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
   @include maxWidth(767) {
     height: 85rem;
     &__inner {

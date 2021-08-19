@@ -7,7 +7,7 @@ $(document).ready(function () {
     centerMode: true,
     variableWidth: true,
     slidesToShow: 3,
-    autoplay: true,
+    // autoplay: true,
     infinite: true,
     speed: 2000,
     responsive: [
@@ -15,6 +15,8 @@ $(document).ready(function () {
         breakpoint: 767,
         settings: {
           arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
