@@ -101,6 +101,44 @@
       }
     }
   }
+  @include desktopLarge(){
+    &__inner{
+      padding-top: 2rem;
+      max-width: 130rem;
+    }
+  }
+  @include desktopMedium() {
+    img {
+      max-width: 100%;
+    }
+    &__inner{
+      padding-top: 2rem;
+      max-width: 80rem;
+    }
+    &__box {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item {
+      margin: 0 3rem;
+      &-title {
+        text-align: left;
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+        margin-top: 0;
+      }
+      &-desc{
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+      }
+    }
+    &__btn{
+      &-button{
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
   @include tablet {
     img {
       max-width: 100%;

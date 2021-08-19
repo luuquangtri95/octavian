@@ -540,6 +540,10 @@ html {
   .header__icon-search i, .header__icon-bar i {
     color: #ffffff; }
 
+@media (min-width: 1024px) {
+  .header .header-menu-toggle {
+    display: none; } }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .header .header-menu-toggle {
     display: block; }
@@ -675,6 +679,12 @@ a {
       white-space: normal; }
     .footer__list-link:hover {
       color: #ffffff; }
+  @media (min-width: 1024px) and (max-width: 1365px) {
+    .footer {
+      margin-top: -25rem; }
+      .footer__inner {
+        --spacing: 3rem;
+        padding-top: 25rem; } }
   @media screen and (max-width: 1023px) {
     .footer {
       padding-bottom: 0;
@@ -792,6 +802,21 @@ a {
       flex-wrap: nowrap; }
       .banner__item-btn i {
         margin-right: 1.5rem; }
+  @media (min-width: 1024px) {
+    .banner {
+      margin-top: -13rem; }
+      .banner__inner {
+        margin-top: 0; }
+      .banner__item-image {
+        max-width: 100%; }
+      .banner__item-content {
+        width: 100%; }
+      .banner__item-title {
+        font-size: 3.5rem;
+        margin-bottom: 3rem; }
+      .banner__item-desc {
+        font-size: 1.6rem;
+        margin-bottom: 5rem; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .banner {
       margin-top: -30rem; }
@@ -914,6 +939,26 @@ a {
     .virus__item:first-child span {
       color: #ffffff; }
 
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .virus__inner {
+    --spacing: 0;
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .virus__column {
+    margin-left: unset; }
+    .virus__column:first-child {
+      -webkit-transform: unset;
+      transform: unset;
+      margin-bottom: 3rem; }
+    .virus__column-info {
+      width: 100%; }
+  .virus__item-content {
+    width: 30rem;
+    height: 30rem; } }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .virus__inner {
     --spacing: 0;
@@ -1024,6 +1069,23 @@ a {
     max-width: 100%;
     white-space: pre-wrap;
     word-break: break-word; }
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .tool img {
+    max-width: 100%; }
+  .tool__inner {
+    padding-bottom: 10rem; }
+  .tool__item {
+    width: 50%; }
+  .tool__content-title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem; }
+  .tool__content-box {
+    margin-bottom: 3rem; }
+  .tool__content-box-info h4 {
+    font-size: 1.8rem; }
+  .tool__content-box-info p {
+    font-size: 1.6rem; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .tool img {
@@ -1159,6 +1221,28 @@ a {
       word-break: break-word;
       color: #6a727f; }
 
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .user img {
+    max-width: 100%; } }
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .user img {
+    max-width: 100%; }
+  .user__item {
+    width: 50%; }
+    .user__item-title {
+      font-size: 3.5rem;
+      margin-bottom: 3rem; }
+    .user__item-box-title {
+      font-size: 1.8rem; }
+    .user__item-info p {
+      font-size: 1.6rem; }
+      .user__item-info p:first-child {
+        font-size: 4rem;
+        margin-right: 2.5rem; }
+        .user__item-info p:first-child span {
+          font-size: 3rem; } }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .user img {
     max-width: 100%; }
@@ -1248,6 +1332,19 @@ a {
   font-size: 1.8rem;
   color: #6a727f;
   margin-bottom: 6.5rem; }
+
+@media (min-width: 1024px) {
+  .protect img {
+    max-width: 100%;
+    margin-left: 0; }
+  .protect__item {
+    width: 50%; }
+    .protect__item-title {
+      font-size: 3.5rem;
+      margin-bottom: 3rem; }
+    .protect__item-desc {
+      font-size: 1.6rem;
+      margin-bottom: 3rem; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .protect img {
@@ -1410,6 +1507,39 @@ a {
       font-size: 1.5rem; }
     .download__btn-icon {
       padding-right: 0.5rem; } }
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .download__inner {
+    padding-top: 2rem;
+    max-width: 130rem; } }
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .download img {
+    max-width: 100%; }
+  .download__inner {
+    padding-top: 2rem;
+    max-width: 80rem; }
+  .download__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .download__item {
+    margin: 0 3rem; }
+    .download__item-title {
+      text-align: left;
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      margin-top: 0; }
+    .download__item-desc {
+      font-size: 1.6rem;
+      margin-bottom: 3rem; }
+  .download__btn-button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .download img {

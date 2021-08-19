@@ -30,6 +30,23 @@
       margin-bottom: 6.5rem;
     }
   }
+  @include desktop() {
+    img {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    &__item {
+      width: 50%;
+      &-title {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+      }
+      &-desc {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
   @include tablet {
     img {
       max-width: 100%;

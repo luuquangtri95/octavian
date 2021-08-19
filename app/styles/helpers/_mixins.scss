@@ -45,6 +45,17 @@
   }
 }
 
+@mixin desktopMedium {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width-m - 1px}) {
+    @content;
+  }
+}
+@mixin desktopLarge {
+  @media (min-width: #{$desktop-width-l-min}) and (max-width: #{$desktop-width-l-max - 1px}) {
+    @content;
+  }
+}
+
 @mixin hideScroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
