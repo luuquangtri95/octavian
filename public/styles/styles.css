@@ -540,7 +540,10 @@ html {
   .header__icon-search i, .header__icon-bar i {
     color: #ffffff; }
 
-@media (min-width: 1024px) {
+.header .header-menu-toggle {
+  display: none; }
+
+@media (min-width: 1024px) and (max-width: 1365px) {
   .header .header-menu-toggle {
     display: none; } }
 
@@ -802,7 +805,7 @@ a {
       flex-wrap: nowrap; }
       .banner__item-btn i {
         margin-right: 1.5rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1365px) {
     .banner {
       margin-top: -13rem; }
       .banner__inner {
@@ -1333,7 +1336,7 @@ a {
   color: #6a727f;
   margin-bottom: 6.5rem; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
   .protect img {
     max-width: 100%;
     margin-left: 0; }

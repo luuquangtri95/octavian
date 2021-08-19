@@ -60,7 +60,10 @@
       }
     }
   }
-  @include desktop() {
+  .header-menu-toggle {
+    display: none;
+  }
+  @include desktopMedium() {
     .header-menu-toggle {
       display: none;
     }

@@ -61,7 +61,7 @@
     }
   }
   
-  @include desktop() {
+  @include desktopMedium() {
     margin-top: -13rem;
     &__inner {
       margin-top: 0;

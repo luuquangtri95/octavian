@@ -34,22 +34,25 @@
   }
 }
 
+//768 - 1023
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
   }
 }
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
+// @mixin desktop {
+//   @media (min-width: #{$desktop-width}) {
+//     @content;
+//   }
+// }
 
+// 1024 - 1365
 @mixin desktopMedium {
   @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-width-m - 1px}) {
     @content;
   }
 }
+//1440 - 1600
 @mixin desktopLarge {
   @media (min-width: #{$desktop-width-l-min}) and (max-width: #{$desktop-width-l-max - 1px}) {
     @content;
