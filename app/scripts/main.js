@@ -6,10 +6,10 @@ $(document).ready(function () {
     nextArrow: false,
     centerMode: true,
     variableWidth: true,
-    slidesToShow: 3,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
+    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 767,
@@ -33,7 +33,8 @@ $(document).ready(function () {
     slidesToShow: 3,
     autoplay: true,
     infinite: true,
-    speed: 2000,
+    speed: 3000,
+    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 767,
