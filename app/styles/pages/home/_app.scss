@@ -1,17 +1,60 @@
 .app {
+  padding-bottom: 15rem;
   &__inner {
     width: 57rem;
   }
-  img {
-    margin-bottom: 20rem;
+  // img {
+  //   margin-bottom: 20rem;
+  // }
+  &__phone {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    &-bottom {
+      position: absolute;
+      bottom: -715px;
+    }
+    &-right {
+      position: absolute;
+      left: 50%;
+      transform: translateX(165px);
+      top: 50px;
+    }
+    &-left {
+      position: absolute;
+      left: 50%;
+      top: 50px;
+      transform: translateX(-186px);
+    }
+  }
+  &__screen {
+    display: flex;
+    justify-content: center;
+    img {
+      overflow: auto;
+      transform: translateY(-33px);
+      margin: 0 43px;
+      z-index: -1;
+    }
+
+    &.slick-initialized .slick-slide {
+      display: flex;
+      margin-top: -3rem;
+      width: 36rem !important;
+      opacity: 1;
+      // &:not(.slick-current) {
+      //   opacity: 0.3;
+      // }
+    }
   }
   @include maxWidth(767) {
-    img{
+    img {
       margin-bottom: 5rem;
     }
     &__inner {
       width: 100%;
     }
-    
   }
 }
