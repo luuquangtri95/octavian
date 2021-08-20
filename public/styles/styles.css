@@ -1176,7 +1176,9 @@ a {
     .app img {
       margin-bottom: 5rem; }
     .app__inner {
-      width: 100%; } }
+      width: 100%; }
+    .app__screen.slick-initialized .slick-slide {
+      width: unset !important; } }
 
 .user__inner {
   display: -webkit-box;
